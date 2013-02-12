@@ -13,7 +13,7 @@ import org.acebot.util.HashTable;
 import org.acebot.util.Random;
 
 /**
- * @author Timer
+ * @author Swipe
  */
 public class InterfaceChild {
 
