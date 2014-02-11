@@ -28,4 +28,15 @@ public class Players {
                 }
                 return loadedPlayers.toArray(new Player[loadedPlayers.size()]);
         }
+        
+        public static Player getNearest(final String... name) {
+        for (final Player p : Players.getLoaded()) {
+            for (final String str : name) {
+                if (p.getName().equals(str)) {
+                    return p;
+                }
+            }
+        }
+        return null;
+    }
 }
